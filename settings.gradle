@@ -1,3 +1,4 @@
 rootProject.name = 'demo'
 
 include 'java-baseball-playground'
+include 'java-racingcar-playground'
