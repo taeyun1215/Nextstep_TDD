@@ -1,3 +1,5 @@
+package stringCalculator;
+
 public class StringValidation {
 
     public void validate(String number) {

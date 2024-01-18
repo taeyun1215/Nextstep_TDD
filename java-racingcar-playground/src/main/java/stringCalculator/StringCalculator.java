@@ -1,3 +1,5 @@
+package stringCalculator;
+
 public class StringCalculator {
 
     private final StringParser stringParser = new StringParser();
