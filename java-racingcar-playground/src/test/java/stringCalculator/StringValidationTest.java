@@ -23,5 +23,4 @@ public class StringValidationTest {
             stringCalculator.add("1,a,3");
         });
     }
-
 }
