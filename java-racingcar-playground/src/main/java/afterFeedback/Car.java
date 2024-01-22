@@ -2,27 +2,27 @@ package afterFeedback;
 
 public class Car {
 
-    String carName;
-    int position;
+    CarName carName;
+    Position position;
 
     private static final int FORWARD_NUM = 4;
 
     public Car(String carName) {
-        this.carName = carName;
-        this.position = 0;
+        this.carName = new CarName(carName);
+        this.position = new Position();
     }
 
     public int size() {
-        return carName.length();
+        return carName.getSizeCarName();
     }
 
     public void move(int randomNo) {
         if (randomNo >= FORWARD_NUM) {
-            this.position++;
+            position.move();
         }
     }
 
     public int getPosition() {
-        return this.position;
+        return this.position.getPosition();
     }
 }

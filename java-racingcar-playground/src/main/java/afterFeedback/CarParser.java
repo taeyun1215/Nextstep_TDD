@@ -10,11 +10,9 @@ public class CarParser {
 
     public List<Car> parser(String input) {
         String[] carNames = input.split(DEFAULT_DELIMITER);
+        // Car 객체 생성
         return Arrays.stream(carNames)
-                .map(carName -> {
-                    CarValidation.carNameValidate(carName); // 유효성 검사 실행
-                    return new Car(carName); // Car 객체 생성
-                })
+                .map(Car::new)
                 .collect(Collectors.toList());
     }
 }
